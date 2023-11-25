@@ -1,0 +1,11 @@
+SELECTION SORT.
+def sort_numbers(numbers):
+    for i in range(len(numbers)):
+        minimum_index = i
+        for j in range(i + 1, len(numbers)):
+            if numbers[j] < numbers[minimum_index]:
+                min_index = j
+        numbers[i], numbers[minimum_index] = numbers[minimum_index], numbers[i]
+my_numbers = [76,9,32,54,98,21]
+sort_numbers(my_numbers)
+print("final Sorted numbers:", my_numbers)
